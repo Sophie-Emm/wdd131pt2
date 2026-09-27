@@ -1,8 +1,13 @@
 body {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #003da5;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
     margin: 0;
-    padding: 50px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .page-wrapper {
@@ -11,4 +16,36 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 
+}
+
+body.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --accent-color: #4d9fff;
+}
+
+.page-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer img {
+    max-width: 150px;
 }
