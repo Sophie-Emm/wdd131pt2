@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.page-wrapper {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #aeaeae;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
