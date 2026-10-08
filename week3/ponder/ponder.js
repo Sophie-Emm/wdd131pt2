@@ -1,17 +1,15 @@
 // grab the menu button and add a click event listener
 let menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
 
 //Add event listener to the menu button
 // anonymous or nameless function
-menuBtn.addEventListener("click", function (e) {
+menuBtn.addEventListener("click", toggle);
+function toggle() {
     //grab reference to the menu element
-    let nav = document.querySelector('nav');
+    let nav = document.querySelector("nav");
 
-    //toggle menu styles when clicked
-    if (nav.style.display = nav.style.display === '' ? 'flex' : '');
-
-    // toggle the class of the menu button
-    menuBtn.classList.toggle("change");
-        
-});
-
+    //toggle menu style
+    menuBtn.classList.toggle("hide")
+    menuBtn.classList.toggle("change");  
+}
