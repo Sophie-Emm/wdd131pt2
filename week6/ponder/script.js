@@ -24,6 +24,14 @@ let newListItems = numbers.map((number) => {
 console.log(newListItems.join(''));
 myList.innerHTML = newListItems.join('');
 
+const number = [125, 20, 15, 5];
+
+document.getElementById("output").innerHTML = number.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total + num;
+}
+
 //im not sure what this is yet, i think its converting the letter grade to a numeric value string=>int? im also not sure what to add
 function convert(grade) {
     switch (grade){
@@ -75,7 +83,7 @@ const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
 //filters fruit arrayfor fruit that contains whatever is in the ()
 const fruits = words.filter((fruit) => {
-    return fruit.includes('w');
+    return fruit.includes('w') && fruits.includes ('a');
 });
 console.log(fruits);
 
