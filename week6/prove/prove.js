@@ -39,6 +39,25 @@ const articles = [
 		stars: "⭐⭐⭐⭐⭐"
 	}
 ];
+
+articles.forEach(article => {
+        const articleSummary = `
+            <article class="book">
+                <div class="book-info">
+                    <p>${article.date}</p>
+                    <p>${article.ages}</p>
+                    <p>${article.genre}</p>
+                    <p><span aria-label="${article.stars}">${article.stars}</span></p>
+                </div>
+                <h2>${article.title}</h2>
+                <img src="${article.imgSrc}" alt="${article.imgAlt}">
+                <p id='desc'>${article.description}</p>
+            </article>
+        `;
+
+        document.getElementById("book-list").innerHTML += articleSummary; 
+    });
+
 /*          
             <article class="book">
                 <div class="book-info">
