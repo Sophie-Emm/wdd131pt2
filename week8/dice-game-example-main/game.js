@@ -21,7 +21,7 @@ document.querySelector('#rollButton').addEventListener("click", event => {
                 //set the img to a random die
             }
         });
-    }, 500);
+    }, 2000);
 });
 
 //create a function where we can keep 
